@@ -85,10 +85,10 @@ flowchart LR
     E --> G
     B -.->|compare| G
 
-    style INPUT fill:#e3f2fd,stroke:#1565c0
-    style MODEL fill:#f3e5f5,stroke:#7b1fa2
-    style OUTPUT fill:#e8f5e9,stroke:#2e7d32
-    style METRICS fill:#fff3e0,stroke:#ef6c00
+    style INPUT fill:#e3f2fd,stroke:#1565c0,color:#000
+    style MODEL fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style OUTPUT fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style METRICS fill:#fff3e0,stroke:#ef6c00,color:#000
 ```
 
 ---
@@ -107,10 +107,10 @@ flowchart TD
     EVAL2 --> COMP
     COMP --> DONE(["✅ SUBMIT<br/>Public GitHub URL"])
 
-    style START fill:#4caf50,color:#fff
-    style DONE fill:#4caf50,color:#fff
-    style BASE fill:#2196f3,color:#fff
-    style ENH fill:#00897b,color:#fff
+    style START fill:#4caf50,color:#000
+    style DONE fill:#4caf50,color:#000
+    style BASE fill:#2196f3,color:#000
+    style ENH fill:#00897b,color:#000
 ```
 
 ---
@@ -132,9 +132,9 @@ flowchart TD
 
     LAZY --> DSET["🗂️ CadCodeDataset<br/>pixel_values + labels"]
 
-    style HF fill:#ffecb3,stroke:#ff8f00
-    style H100 fill:#c8e6c9,stroke:#388e3c
-    style EVAL fill:#bbdefb,stroke:#1976d2
+    style HF fill:#ffecb3,stroke:#ff8f00,color:#000
+    style H100 fill:#c8e6c9,stroke:#388e3c,color:#000
+    style EVAL fill:#bbdefb,stroke:#1976d2,color:#000
 ```
 
 ---
@@ -182,9 +182,9 @@ flowchart TB
     CP -.-> VIT
     CP -.-> DEC
 
-    style VIT fill:#e1bee7,stroke:#8e24aa
-    style DEC fill:#b2dfdb,stroke:#00695c
-    style CHECKPOINT fill:#fff9c4,stroke:#f9a825
+    style VIT fill:#e1bee7,stroke:#8e24aa,color:#000
+    style DEC fill:#b2dfdb,stroke:#00695c,color:#000
+    style CHECKPOINT fill:#fff9c4,stroke:#f9a825,color:#000
 ```
 
 ---
@@ -209,9 +209,9 @@ flowchart TD
     LOOP -->|done| SAVE["💾 Model in memory"]
     SAVE --> GEN["🚀 Switch to eval mode<br/>enable KV cache"]
 
-    style FREEZE fill:#e3f2fd,stroke:#1565c0
-    style OOM fill:#ffcdd2,stroke:#c62828
-    style GEN fill:#c8e6c9,stroke:#2e7d32
+    style FREEZE fill:#e3f2fd,stroke:#1565c0,color:#000
+    style OOM fill:#ffcdd2,stroke:#c62828,color:#000
+    style GEN fill:#c8e6c9,stroke:#2e7d32,color:#000
 ```
 
 ---
@@ -260,9 +260,9 @@ flowchart LR
 
     MPS -->|OOM| CPUFB["🔄 Fallback CPU"]
 
-    style MPS fill:#fff3e0,stroke:#e65100
-    style CODE fill:#e8f5e9,stroke:#2e7d32
-    style CPUFB fill:#ffcdd2,stroke:#b71c1c
+    style MPS fill:#fff3e0,stroke:#e65100,color:#000
+    style CODE fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style CPUFB fill:#ffcdd2,stroke:#b71c1c,color:#000
 ```
 
 ---
@@ -280,9 +280,9 @@ flowchart TD
     FAIL --> RATE["📊 VSR = valid / total"]
     OK --> RATE
 
-    style OK fill:#a5d6a7,stroke:#2e7d32
-    style FAIL fill:#ef9a9a,stroke:#c62828
-    style RATE fill:#bbdefb,stroke:#1565c0
+    style OK fill:#a5d6a7,stroke:#2e7d32,color:#000
+    style FAIL fill:#ef9a9a,stroke:#c62828,color:#000
+    style RATE fill:#bbdefb,stroke:#1565c0,color:#000
 ```
 
 ---
@@ -304,8 +304,8 @@ flowchart TD
     VOX --> IOU["📊 IoU = |A ∩ B| / |A ∪ B|"]
     IOU --> MEAN["📈 Mean over 100 samples"]
 
-    style IOU fill:#fff9c4,stroke:#f57f17
-    style MEAN fill:#c8e6c9,stroke:#388e3c
+    style IOU fill:#fff9c4,stroke:#f57f17,color:#000
+    style MEAN fill:#c8e6c9,stroke:#388e3c,color:#000
 ```
 
 ---
@@ -337,10 +337,10 @@ flowchart TD
 
     OK1 --> FINAL["🏆 Final enhanced config<br/>More data + steps<br/>Greedy decode only"]
 
-    style OK1 fill:#a5d6a7,stroke:#2e7d32
-    style BAD1 fill:#ef9a9a,stroke:#c62828
-    style BAD2 fill:#ef9a9a,stroke:#c62828
-    style FINAL fill:#bbdefb,stroke:#1565c0
+    style OK1 fill:#a5d6a7,stroke:#2e7d32,color:#000
+    style BAD1 fill:#ef9a9a,stroke:#c62828,color:#000
+    style BAD2 fill:#ef9a9a,stroke:#c62828,color:#000
+    style FINAL fill:#bbdefb,stroke:#1565c0,color:#000
 ```
 
 ---
@@ -363,8 +363,8 @@ flowchart TD
     S5 --> OK
     S6 --> OK
 
-    style PROB fill:#ffcdd2,stroke:#b71c1c
-    style OK fill:#c8e6c9,stroke:#388e3c
+    style PROB fill:#ffcdd2,stroke:#b71c1c,color:#000
+    style OK fill:#c8e6c9,stroke:#388e3c,color:#000
 ```
 
 ---
