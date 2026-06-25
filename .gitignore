@@ -8,3 +8,19 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Large artifacts (not committed; reproducible from scripts)
+data/
+checkpoints/
+logs/
+*.parquet
+.DS_Store
+
+# Keep results (metrics/plots) but not heavy prediction dumps if large
+results/smoke_*
+results/timing_*
+results/stab_*
+results/memtest_*
+results/cputest_*
+results/enhanced_quick_*
+

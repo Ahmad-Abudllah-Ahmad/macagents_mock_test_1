@@ -5,9 +5,15 @@ description = "Just a technical test"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "accelerate>=1.14.0",
     "cadquery>=2.5.2",
     "datasets>=3.6.0",
     "ipykernel>=6.29.5",
+    "matplotlib>=3.11.0",
+    "pillow>=12.2.0",
     "scipy>=1.15.3",
+    "torch>=2.12.1",
+    "torchvision>=0.27.1",
+    "transformers>=5.12.1",
     "trimesh>=4.6.11",
 ]
